@@ -1,0 +1,19 @@
+[package]
+name = "creator_hub"
+version = "1.0.0"
+authors = ["Your Name <your.email@example.com>"]
+edition = '2024'
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "framework/testnet" }
+
+[addresses]
+creator_hub = "0x0"
+sui = "0x2"
+std = "0x1"
+
+[dev-dependencies]
+# Test dependencies are automatically included when running tests
+
+[dev-addresses]
+# Test addresses for development
